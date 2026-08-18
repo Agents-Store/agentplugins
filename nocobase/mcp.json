@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "nocobase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@nocobase/mcp-server"
+      ],
+      "env": {
+        "NOCOBASE_URL": "${NOCOBASE_URL}",
+        "NOCOBASE_EMAIL": "${NOCOBASE_EMAIL}",
+        "NOCOBASE_PASSWORD": "${NOCOBASE_PASSWORD}"
+      }
+    }
+  }
+}

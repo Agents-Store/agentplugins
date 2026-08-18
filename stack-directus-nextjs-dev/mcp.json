@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "directus": {
+      "type": "streamable-http",
+      "url": "${NEXT_PUBLIC_DIRECTUS_URL}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DIRECTUS_ADMIN_TOKEN}"
+      }
+    }
+  }
+}

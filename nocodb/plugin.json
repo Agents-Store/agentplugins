@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nocodb",
+  "version": "1.0.0",
+  "description": "NocoDB database development plugin. Manage tables, records, columns, views, relations, formulas, rollups, lookups, filtering, sorting, search, aggregation, webhooks, and filter/sort management via MCP tools.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "nocodb",
+    "database",
+    "tables",
+    "records",
+    "columns",
+    "views",
+    "relations",
+    "formulas",
+    "no-code",
+    "spreadsheet",
+    "airtable-alternative"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/",
+      "commands": "./com.anthropic.claude-code/commands/"
+    }
+  }
+}

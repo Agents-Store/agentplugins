@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nocodb-ops",
+  "version": "1.0.6",
+  "description": "NocoDB ops plugin for Agents Store. Record management, views, reports, filtering, search, and data import/export for business users via MCP tools and CLI.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "nocodb",
+    "ops",
+    "database",
+    "records",
+    "views",
+    "reports",
+    "agents-store"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/",
+      "commands": "./com.anthropic.claude-code/commands/"
+    }
+  }
+}

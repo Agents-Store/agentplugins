@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nocobase",
+  "version": "1.1.0",
+  "description": "NocoBase platform development plugin. Expert guidance on collections, fields, relations, workflows, UI blocks, plugin development, MCP-powered page management, data operations, and collection inspection for NocoBase applications.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "nocobase",
+    "low-code",
+    "collections",
+    "workflows",
+    "ui-blocks",
+    "plugin-development",
+    "no-code",
+    "application-builder"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/",
+      "commands": "./com.anthropic.claude-code/commands/"
+    }
+  }
+}

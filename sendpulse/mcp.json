@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "sendpulse": {
+      "type": "streamable-http",
+      "url": "https://mcp.sendpulse.com/mcp"
+    }
+  }
+}

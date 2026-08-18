@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "media-hosting-ops",
+  "version": "1.0.0",
+  "description": "Media hosting operations plugin. Upload images by public URL to MinIO-based media hosting via the uploadImageToMinio MCP tool.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "media-hosting",
+    "minio",
+    "image-upload",
+    "ops",
+    "agents-store"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/"
+    }
+  }
+}

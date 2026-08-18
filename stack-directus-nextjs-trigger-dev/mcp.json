@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "directus": {
+      "type": "streamable-http",
+      "url": "${NEXT_PUBLIC_DIRECTUS_URL}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DIRECTUS_ADMIN_TOKEN}"
+      }
+    },
+    "trigger-dev": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "trigger.dev@latest",
+        "mcp"
+      ],
+      "env": {
+        "TRIGGER_ACCESS_TOKEN": "${TRIGGER_SECRET_KEY}",
+        "TRIGGER_API_URL": "${TRIGGER_API_URL}"
+      }
+    }
+  }
+}

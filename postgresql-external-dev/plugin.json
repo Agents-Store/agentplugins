@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "postgresql-external-dev",
+  "version": "1.0.1",
+  "description": "PostgreSQL schema design for external database connections. Compatible SQL patterns for NocoDB and NocoBase — table creation, column types, relations, indexes, and anti-patterns.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "postgresql",
+    "postgres",
+    "database",
+    "schema",
+    "sql",
+    "nocodb",
+    "nocobase",
+    "external-database",
+    "low-code",
+    "dev",
+    "agents-store"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/"
+    }
+  }
+}
