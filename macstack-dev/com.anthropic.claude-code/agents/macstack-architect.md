@@ -46,8 +46,8 @@ in the root of a Claude project).
    deterministic workflows implement tasks; triggers live in their own collection
    (schedule/webhook/db_event/form/manual) and are referenced by id. Mark
    human-in-the-loop gates explicitly.
-3. **Software selection.** Prototype reuse first (stackmakers-ai repos); Open Source
-   first; Agentic IT Ready first (MCP + API + CLI). Proven bundles: workspace =
+3. **Software selection.** Prototype reuse first (any `project-*`/`demo-*` repo the
+   user points at); Open Source first; Agentic IT Ready first (MCP + API + CLI). Proven bundles: workspace =
    postgresql+nocodb+n8n(+trigger-dev); web app = directus+nextjs(+trigger-dev);
    headless agents = postgresql+qdrant+n8n/trigger-dev; BPMS = nocobase. Custom code
    only for what is unique to the business. Fill the full taxonomy: category (from
@@ -65,15 +65,21 @@ in the root of a Claude project).
 6. **No secrets, no duplication.** Env keys by NAME only (resources.accesses with
    required flags); skill/plugin content by reference; volatile IDs stay in
    project-config.
+7. **Roles and open questions are pointers.** The narrative per role belongs to
+   `USER-CASES.md`; `roles[]` owns only the machine half (`id`, `name`, `acl`,
+   `isolation`), joined to it via `roles[].cases`. Open questions are pointers
+   into `OPEN-QUESTIONS.md` — never prose in the JSON.
 
 ## Output contract
 
 Produce (a) a compact result-first summary table (goals → results → processes), then
-(b) the full macstack.json draft, then (c) open questions. Validate mentally against
-the schema at ${PLUGIN_ROOT}/skills/lint/references/macstack.schema.json and
-state which lint rules the draft satisfies. Recommend a prototype
-(github:stackmakers-ai/...) whenever one fits, and list the context plugins
-({tool}-{dev|ops|provision} + stack-*) the stack needs.
+(b) the full macstack.json draft, then (c) open questions as pointer-form entries
+only (id/ref/status) — the prose lives in `OPEN-QUESTIONS.md`, never in the JSON.
+Validate mentally against the schema at
+${PLUGIN_ROOT}/skills/lint/references/macstack.schema.json and state which
+lint rules the draft satisfies. Recommend a prototype (`github:<owner>/<repo>`, or a
+local absolute path) whenever the user has one that fits, and list the context plugins ({tool}-{dev|ops|provision} +
+stack-*) the stack needs.
 
 Ask at most ONE compact block of clarifying questions before drafting; proceed with
 explicit assumptions if the user does not answer.

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "multi-bank-ops",
+  "version": "2.0.0",
+  "description": "Multi-Bank Account Manager with broadcast architecture pattern. Aggregates financial data from Monobank and PrivatBank via MCP tools, broadcasts balance updates and budget alerts to subscribed components, categorizes transactions, and exports financial reports in CSV/PDF.",
+  "author": {
+    "name": "AGENTS.STORE"
+  },
+  "keywords": [
+    "multi-bank",
+    "monobank",
+    "privatbank",
+    "banking",
+    "finance",
+    "broadcast",
+    "balances",
+    "transactions",
+    "payments",
+    "salary",
+    "budget",
+    "reports",
+    "ukrainian-banks",
+    "mcp"
+  ],
+  "extensions": {
+    "com.anthropic.claude-code": {
+      "agents": "./com.anthropic.claude-code/agents/",
+      "commands": "./com.anthropic.claude-code/commands/"
+    }
+  }
+}
