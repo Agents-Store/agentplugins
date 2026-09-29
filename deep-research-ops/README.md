@@ -9,7 +9,7 @@ Vendor-neutral plugin per the [Agent Plugins 1.0](https://agent-plugins.org) sta
 ## Components
 
 - 5 skill(s) under `skills/`
-- MCP server config in `mcp.json`
+- No MCP server
 - commands preserved verbatim under `com.anthropic.claude-code/` (outside Agent Plugins v1 — only clients that understand this namespace will use them)
 
 ## Source
