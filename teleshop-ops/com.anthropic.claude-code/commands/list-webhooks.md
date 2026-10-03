@@ -1,8 +1,8 @@
 ---
 description: List all configured webhooks with their status
 allowed-tools:
-  - mcp__teleshop__list_webhooks
-  - mcp__teleshop__get_webhook_stats
+  - mcp__plugin_teleshop-ops_teleshop__list_webhooks
+  - mcp__plugin_teleshop-ops_teleshop__get_webhook_stats
 argument-hint: null
 ---
 

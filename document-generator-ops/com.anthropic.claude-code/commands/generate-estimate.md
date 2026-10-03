@@ -4,7 +4,6 @@ allowed-tools:
   - Bash
   - Read
   - Write
-  - Glob
 argument-hint: <estimate-number> [--company <name>] [--client <name>]
 ---
 
@@ -23,10 +22,14 @@ Parse from "$ARGUMENTS".
 
 ## Process
 
-1. **Resolve plugin directory:**
-   Find the plugin dir by globbing for `**/document-generator-ops/scripts/generate_pdf.js`.
+1. **Plugin directory:**
+   Scripts and templates live under `${PLUGIN_ROOT}/` (Claude Code substitutes it with the installed plugin path). Use it as is; do not search for the plugin.
 
-2. **Check dependencies.**
+2. **Check dependencies:**
+   ```bash
+   node "${PLUGIN_ROOT}/scripts/check_deps.js"
+   ```
+   If `ready` is false, show what is missing and ask permission to run the listed `installCommands`. (`ready` covers Node, the npm modules and the Playwright browser; pandoc and the PDF engines are optional extras listed in `missing`.)
 
 3. **Gather data from user (structured for detailed estimate):**
 
@@ -60,7 +63,7 @@ Parse from "$ARGUMENTS".
 
 4. **Read template:**
    ```bash
-   cat <plugin_dir>/templates/estimate_template.json
+   cat "${PLUGIN_ROOT}/templates/estimate_template.json"
    ```
 
 5. **Build JSON input:**
@@ -118,7 +121,7 @@ Parse from "$ARGUMENTS".
 
 6. **Generate PDF:**
    ```bash
-   cd <plugin_dir> && node scripts/generate_pdf.js /absolute/path/.doc_input.json
+   node "${PLUGIN_ROOT}/scripts/generate_pdf.js" /absolute/path/.doc_input.json
    ```
 
 7. **Deliver result:**
@@ -133,6 +136,6 @@ Parse from "$ARGUMENTS".
 
 ## Example Usage
 ```
-/generate-estimate "EST-2026-001" --company "TechCo" --client "Acme Corp"
-/generate-estimate "Q-042"
+/document-generator-ops:generate-estimate "EST-2026-001" --company "TechCo" --client "Acme Corp"
+/document-generator-ops:generate-estimate "Q-042"
 ```

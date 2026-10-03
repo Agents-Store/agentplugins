@@ -1,9 +1,9 @@
 ---
 description: Search records in a NocoDB table by keyword
 allowed-tools:
-  - mcp__nocodb__queryRecords
-  - mcp__nocodb__getTablesList
-  - mcp__nocodb__getTableSchema
+  - mcp__plugin_nocodb-ops_nocodb__queryRecords
+  - mcp__plugin_nocodb-ops_nocodb__getTablesList
+  - mcp__plugin_nocodb-ops_nocodb__getTableSchema
 argument-hint: <table-name> <query>
 ---
 

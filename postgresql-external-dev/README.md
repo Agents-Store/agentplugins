@@ -1,6 +1,6 @@
 # postgresql-external-dev (Agent Plugins 1.0)
 
-PostgreSQL schema design for external database connections. Compatible SQL patterns for NocoDB and NocoBase — table creation, column types, relations, indexes, and anti-patterns.
+PostgreSQL knowledge for low-code stacks. Schema design for external database connections (compatible SQL patterns for NocoDB and NocoBase — table creation, column types, relations, indexes, anti-patterns), plus the 29-tool PostgreSQL MCP reference and the PostgREST REST API.
 
 ## Install
 
@@ -8,7 +8,7 @@ Vendor-neutral plugin per the [Agent Plugins 1.0](https://agent-plugins.org) sta
 
 ## Components
 
-- 6 skill(s) under `skills/`
+- 8 skill(s) under `skills/`
 - No MCP server
 - agents preserved verbatim under `com.anthropic.claude-code/` (outside Agent Plugins v1 — only clients that understand this namespace will use them)
 

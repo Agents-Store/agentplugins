@@ -1,6 +1,6 @@
 # flask-dev (Agent Plugins 1.0)
 
-Flask dev plugin for Agents Store. Application factory patterns, blueprint organization, Jinja2 templates, Flask CLI recipes, and troubleshooting for developers building with Flask.
+Flask dev plugin for Agents Store. Project scaffold, application factory patterns, blueprint organization, Flask-Login authentication, CRUD views, Jinja2 templates, Flask CLI recipes, and troubleshooting for developers building with Flask.
 
 ## Install
 
@@ -8,7 +8,7 @@ Vendor-neutral plugin per the [Agent Plugins 1.0](https://agent-plugins.org) sta
 
 ## Components
 
-- 6 skill(s) under `skills/`
+- 8 skill(s) under `skills/`
 - No MCP server
 - agents preserved verbatim under `com.anthropic.claude-code/` (outside Agent Plugins v1 — only clients that understand this namespace will use them)
 

@@ -1,8 +1,8 @@
 ---
 description: List all product attributes with their values
 allowed-tools:
-  - mcp__teleshop__list_attributes
-  - mcp__teleshop__get_attribute
+  - mcp__plugin_teleshop-ops_teleshop__list_attributes
+  - mcp__plugin_teleshop-ops_teleshop__get_attribute
 argument-hint:
   - '--search <query>'
 ---

@@ -1,7 +1,7 @@
 ---
 description: List all product categories with optional search
 allowed-tools:
-  - mcp__teleshop__list_categories
+  - mcp__plugin_teleshop-ops_teleshop__list_categories
 argument-hint:
   - '--search <query>'
 ---

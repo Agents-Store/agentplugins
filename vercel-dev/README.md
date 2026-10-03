@@ -1,6 +1,6 @@
 # vercel-dev (Agent Plugins 1.0)
 
-Vercel ecosystem plugin. Deployment, AI SDK, Edge Functions, storage, routing, performance optimization. Includes CLI deploy troubleshooting for non-Git projects, Hobby plan fixes, standalone output handling. Based on official vercel-plugin v0.51.0 by Vercel Labs; telemetry is opt-in (VERCEL_PLUGIN_TELEMETRY=on).
+Vercel ecosystem plugin. Deployment, AI SDK, Edge Functions, storage, routing, performance optimization. Includes CLI deploy troubleshooting for non-Git projects, Hobby plan fixes, standalone output handling. Based on official vercel-plugin v0.53.0 by Vercel Labs; telemetry is opt-in (VERCEL_PLUGIN_TELEMETRY=on).
 
 ## Install
 
@@ -8,7 +8,7 @@ Vendor-neutral plugin per the [Agent Plugins 1.0](https://agent-plugins.org) sta
 
 ## Components
 
-- 38 skill(s) under `skills/`
+- 32 skill(s) under `skills/`
 - MCP server config in `mcp.json`
 - agents/commands/hooks preserved verbatim under `com.anthropic.claude-code/` (outside Agent Plugins v1 — only clients that understand this namespace will use them)
 

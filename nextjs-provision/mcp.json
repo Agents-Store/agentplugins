@@ -8,14 +8,6 @@
         "shadcn@latest",
         "mcp"
       ]
-    },
-    "shadcn-community": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@jpisnice/shadcn-ui-mcp-server"
-      ]
     }
   }
 }

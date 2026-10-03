@@ -1,6 +1,6 @@
 # sendpulse-ops (Agent Plugins 1.0)
 
-Sendpulse multi-channel marketing plugin. Manage chatbots (Telegram, WhatsApp, Instagram, Messenger, Viber), CRM (contacts, deals, pipelines, boards, tasks), email campaigns, templates, addressbooks, and SMTP transactional email via 133+ MCP tools.
+Sendpulse multi-channel marketing plugin. Manage chatbots (Telegram, WhatsApp, Instagram, Messenger, Viber, TikTok), CRM (contacts, deals, pipelines, boards, tasks), Courses (LMS) academies, courses and students, email campaigns, templates, addressbooks, and SMTP transactional email via 147 MCP tools.
 
 ## Install
 
@@ -8,7 +8,7 @@ Vendor-neutral plugin per the [Agent Plugins 1.0](https://agent-plugins.org) sta
 
 ## Components
 
-- 11 skill(s) under `skills/`
+- 12 skill(s) under `skills/`
 - MCP server config in `mcp.json`
 - agents/commands preserved verbatim under `com.anthropic.claude-code/` (outside Agent Plugins v1 — only clients that understand this namespace will use them)
 

@@ -38,7 +38,7 @@
       "type": "streamable-http",
       "url": "${NOCODB_MCP_URL}",
       "headers": {
-        "xc-mcp-token": "${NOCODB_TOKEN}"
+        "xc-mcp-token": "${NOCODB_MCP_TOKEN}"
       }
     },
     "postgresql-mcp": {
