@@ -6,7 +6,7 @@
 
 The [Agent Plugins 1.0](https://agent-plugins.org) standard (supported by ChatGPT, Codex, Cursor, GitHub Copilot, Kiro, and VS Code) does not define a registry or marketplace. Clone this repository and point your client's plugin-install flow at a plugin's directory, e.g. `agents-store-agentplugins/<plugin-name>/plugin.json`.
 
-## Плагины (42)
+## Плагины (43)
 
 | Плагин | Описание | Skills | Agents | Commands | MCP |
 |---|---|---|---|---|---|
@@ -41,6 +41,7 @@ The [Agent Plugins 1.0](https://agent-plugins.org) standard (supported by ChatGP
 | [restic-dev](./restic-dev) | restic backup plugin for Agents Store. Set up encrypted daily backups on any Linux server to S3-compatible storage (Cloudflare R2): server recon + restic instal | 11 | 1 | 3 | — |
 | [sendpulse-ops](./sendpulse-ops) | Sendpulse multi-channel marketing plugin. Manage chatbots (Telegram, WhatsApp, Instagram, Messenger, Viber, TikTok), CRM (contacts, deals, pipelines, boards, ta | 12 | 2 | 15 | ✓ |
 | [seo-dev](./seo-dev) | SEO development plugin for Agents Store. Technical SEO, structured data (JSON-LD), metadata API, Core Web Vitals, sitemaps, and content optimization patterns fo | 10 | 1 | 1 | — |
+| [session-doctor-dev](./session-doctor-dev) | Read-only audit of a Claude Code session: where it runs, what context it loaded, which model and effort it used, the skills it invoked, every HTTP request with  | 2 | 0 | 0 | — |
 | [sqlalchemy-dev](./sqlalchemy-dev) | SQLAlchemy dev plugin for Agents Store. Typed SQLAlchemy 2.0 style (Mapped, mapped_column, select) with a SQLAlchemy 2.1 section: model definition patterns, rel | 6 | 1 | 0 | — |
 | [stack-composable-stack-v1](./stack-composable-stack-v1) | Composable Stack v1 architecture plugin. How PostgreSQL (direct MCP + PostgREST API), NocoDB, n8n, Trigger.dev, and NocoBase (prod + dev sandbox) fit together f | 7 | 1 | 0 | ✓ |
 | [stack-directus-nextjs](./stack-directus-nextjs) | Directus + Next.js architecture plugin. How Directus (content, files, access) and a Next.js App Router frontend fit together: who holds the token, how the cache | 6 | 1 | 0 | ✓ |
