@@ -1,6 +1,9 @@
 ---
 description: Run a full instance provisioning session with multiple workflows
-allowed-tools: '["Bash", "Read", "Grep"]'
+allowed-tools:
+  - Bash
+  - Read
+  - Grep
 argument-hint: '[--preset <startup|devops|marketing|custom>] [--dry-run]'
 ---
 

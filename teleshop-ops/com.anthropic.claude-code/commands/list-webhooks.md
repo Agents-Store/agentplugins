@@ -10,6 +10,8 @@ argument-hint: null
 
 List all configured webhooks in the Teleshop store.
 
+Method and rules: the `teleshop-ops:webhook-management` skill.
+
 ## Process
 
 1. **List all webhooks:**

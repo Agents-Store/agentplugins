@@ -11,6 +11,8 @@ argument-hint: <json-data-or-description> [--mode merge|replace]
 
 Import categories and products into the store from structured JSON data.
 
+Method and rules: the `teleshop-ops:catalog-import` skill.
+
 ## Arguments
 Format: `<json-data-or-description> [--mode merge|replace]`
 - json-data: JSON catalog data or a description of what to import

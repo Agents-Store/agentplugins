@@ -10,6 +10,8 @@ allowed-tools:
 
 # Create Database
 
+Follow the `mcp-patterns` skill (`${PLUGIN_ROOT}/skills/mcp-patterns/SKILL.md`) for the database tool pattern and usage notes; read it before the first call.
+
 Create and deploy a database instance in a Dokploy project.
 
 ## Arguments

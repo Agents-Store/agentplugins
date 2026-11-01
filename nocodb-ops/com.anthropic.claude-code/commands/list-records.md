@@ -1,6 +1,7 @@
 ---
 description: List records from a NocoDB table with optional filtering
 allowed-tools:
+  - Read
   - mcp__plugin_nocodb-ops_nocodb__queryRecords
   - mcp__plugin_nocodb-ops_nocodb__getTablesList
   - mcp__plugin_nocodb-ops_nocodb__getTableSchema
@@ -10,6 +11,8 @@ argument-hint: <table-name> [where-filter]
 # List Records
 
 Query records from a NocoDB table with optional filtering and sorting.
+
+Listing, counting and paging rules are written down in `${PLUGIN_ROOT}/skills/record-management/SKILL.md`; read it before the first step.
 
 ## Arguments
 

@@ -1,6 +1,7 @@
 ---
 description: Build an aggregation report from NocoDB table data
 allowed-tools:
+  - Read
   - mcp__plugin_nocodb-ops_nocodb__aggregate
   - mcp__plugin_nocodb-ops_nocodb__queryRecords
   - mcp__plugin_nocodb-ops_nocodb__getTablesList
@@ -12,6 +13,8 @@ argument-hint: <table-name> [aggregation-type] [field]
 # Build Report
 
 Build an aggregation report from a NocoDB table.
+
+The aggregation types, the segmented reports and the dashboard pattern are written down in `${PLUGIN_ROOT}/skills/views-and-reports/SKILL.md`; read it before the first step.
 
 ## Arguments
 

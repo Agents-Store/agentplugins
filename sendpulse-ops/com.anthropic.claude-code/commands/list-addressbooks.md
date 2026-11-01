@@ -9,6 +9,8 @@ argument-hint:
 
 List email addressbooks (mailing lists) with subscriber counts.
 
+Method and rules: the `sendpulse-ops:email-addressbooks` skill.
+
 ## Arguments
 Format: `[--limit <number>]`
 - --limit: Number of addressbooks to return (default: 50)

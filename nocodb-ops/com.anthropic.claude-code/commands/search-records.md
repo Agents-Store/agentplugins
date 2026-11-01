@@ -1,6 +1,7 @@
 ---
 description: Search records in a NocoDB table by keyword
 allowed-tools:
+  - Read
   - mcp__plugin_nocodb-ops_nocodb__queryRecords
   - mcp__plugin_nocodb-ops_nocodb__getTablesList
   - mcp__plugin_nocodb-ops_nocodb__getTableSchema
@@ -10,6 +11,8 @@ argument-hint: <table-name> <query>
 # Search Records
 
 Search for records containing a keyword across text fields.
+
+The filter and where syntax, operators and sorting are written down in `${PLUGIN_ROOT}/skills/search-filter/SKILL.md`; read it before the first step.
 
 ## Arguments
 

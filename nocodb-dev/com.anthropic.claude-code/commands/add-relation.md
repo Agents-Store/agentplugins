@@ -1,12 +1,18 @@
 ---
 description: Set up a Link between two NocoDB tables, optionally with a Lookup
 argument-hint: '[from-table] [to-table] [cardinality]'
-allowed-tools: '[Read, Write, Bash, Skill]'
+allowed-tools:
+  - Read
+  - Write
+  - Bash
+  - Skill
 ---
 
 # Add Relation
 
 Connect two NocoDB tables with a Link field. Optionally add a Lookup so the linked record's display name is visible on the other side.
+
+How Link, Lookup and Rollup fields are built and verified is written down in `${PLUGIN_ROOT}/skills/field-management/SKILL.md`; read it before the first step.
 
 ## Steps
 

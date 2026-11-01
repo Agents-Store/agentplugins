@@ -9,6 +9,8 @@ argument-hint:
 
 List CRM tasks from all boards.
 
+Method and rules: the `sendpulse-ops:crm-boards-tasks` skill.
+
 ## Arguments
 Format: `[--limit <number>]`
 - --limit: Number of tasks to return (default: 50)

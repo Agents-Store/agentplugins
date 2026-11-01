@@ -1,12 +1,18 @@
 ---
 description: Create a new NocoDB table with optional initial fields
 argument-hint: '[base-name-or-id] [table-title]'
-allowed-tools: '[Read, Write, Bash, Skill]'
+allowed-tools:
+  - Read
+  - Write
+  - Bash
+  - Skill
 ---
 
 # Create NocoDB Table
 
 Create a new table in a NocoDB base. Prompt for any missing details (base, title, initial fields).
+
+The table payloads, the display field and the pre-flight checklist are written down in `${PLUGIN_ROOT}/skills/table-management/SKILL.md`; read it before the first step.
 
 ## Steps
 

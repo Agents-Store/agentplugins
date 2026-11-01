@@ -11,6 +11,8 @@ allowed-tools:
 
 Answer "are my backups healthy?" at a glance. Read-only.
 
+Method and rules: the `restic-dev:monitoring` skill.
+
 Parse `[--log-lines <n>]` (default 20) from "$ARGUMENTS".
 
 ## Process

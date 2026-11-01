@@ -1,10 +1,15 @@
 ---
 description: Generate a Non-Disclosure Agreement (NDA) — PDF
-allowed-tools: '["Bash", "Read", "Write"]'
+allowed-tools:
+  - Bash
+  - Read
+  - Write
 argument-hint: '[--type <mutual|unilateral>] [--party1 <name>] [--party2 <name>]'
 ---
 
 # Generate NDA
+
+Follow the `document-rules` skill (`${PLUGIN_ROOT}/skills/document-rules/SKILL.md`) and the `document-generator` skill (`${PLUGIN_ROOT}/skills/document-generator/SKILL.md`): the first holds the mandatory rules, the second the generation process. Read both before Step 1.
 
 Generate a professional Non-Disclosure Agreement with standard legal clauses and signature blocks.
 

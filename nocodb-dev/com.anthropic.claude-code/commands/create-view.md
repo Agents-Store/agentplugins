@@ -1,12 +1,18 @@
 ---
 description: Create a Grid / Form / Gallery / Kanban / Calendar / Map / Gantt / Timeline / List view
 argument-hint: '[table-name-or-id] [view-type] [view-title]'
-allowed-tools: '[Read, Write, Bash, Skill]'
+allowed-tools:
+  - Read
+  - Write
+  - Bash
+  - Skill
 ---
 
 # Create NocoDB View
 
 Create a new view on an existing table. Each view type has different prerequisites — see the **view-management** skill.
+
+The view types, their prerequisites and create payloads are written down in `${PLUGIN_ROOT}/skills/view-management/SKILL.md`; read it before the first step.
 
 ## Steps
 

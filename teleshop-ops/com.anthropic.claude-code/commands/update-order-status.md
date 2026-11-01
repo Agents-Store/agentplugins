@@ -10,6 +10,8 @@ argument-hint: <order-id> <status>
 
 Change the status of an order in the Teleshop store.
 
+Method and rules: the `teleshop-ops:order-management` skill.
+
 ## Arguments
 Format: `<order-id> <status>`
 - order-id: The order ID (required)

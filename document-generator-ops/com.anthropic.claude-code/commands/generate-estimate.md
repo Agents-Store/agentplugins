@@ -9,6 +9,8 @@ argument-hint: <estimate-number> [--company <name>] [--client <name>]
 
 # Generate Estimate
 
+Follow the `document-rules` skill (`${PLUGIN_ROOT}/skills/document-rules/SKILL.md`) and the `document-generator` skill (`${PLUGIN_ROOT}/skills/document-generator/SKILL.md`): the first holds the mandatory rules, the second the generation process. Read both before Step 1.
+
 Generate a detailed, professional cost estimate with phase-based pricing, team composition, timeline, scope, and payment schedule.
 
 ## Arguments
